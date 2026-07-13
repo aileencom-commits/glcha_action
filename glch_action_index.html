@@ -10,22 +10,23 @@
     font-family: 'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
     color:#eef2ee;
     overflow: hidden;
+    height: 100%;
   }
   body {
     display:flex;
     width:max-content;
-    height:100vh;
+    height:100%;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
   }
   /* 가로 스크롤바 - 덱 하단 */
-  body::-webkit-scrollbar { height: 6px; }
-  body::-webkit-scrollbar-track { background: #0a0d0a; }
-  body::-webkit-scrollbar-thumb { background: #1e271e; border-radius: 3px; }
-  body::-webkit-scrollbar-thumb:hover { background: #2e3d2e; }
-  body { scrollbar-width: thin; scrollbar-color: #1e271e #0a0d0a; }
+  html::-webkit-scrollbar, body::-webkit-scrollbar { height: 6px; }
+  html::-webkit-scrollbar-track, body::-webkit-scrollbar-track { background: #0a0d0a; }
+  html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb { background: #2a352a; border-radius: 3px; }
+  html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover { background: #3a4a3a; }
+  body { scrollbar-width: thin; scrollbar-color: #2a352a #0a0d0a; }
 
   .slide {
     width: 100vw;
@@ -202,18 +203,18 @@
       </div>
 
       <!-- step 카드 3개 -->
-      <div style="display:flex; flex-direction:column; gap:8px; flex-shrink:0; width:240px;">
+      <div style="display:flex; flex-direction:column; gap:8px; flex-shrink:0; width:320px;">
         <div class="step-card" style="padding:12px 16px; border-radius:12px; height:76px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center;">
-          <div class="tag" style="font-size:13px;">Step1 즉시 (7월 내)</div>
-          <h3 style="font-size:15px; margin:3px 0 0;">국가별 순위 정렬</h3>
+          <div class="tag" style="font-size:13px; white-space:nowrap;">Step1 즉시 (7월 내)</div>
+          <h3 style="font-size:15px; margin:3px 0 0; white-space:nowrap;">국가별 순위 정렬</h3>
         </div>
         <div class="step-card" style="padding:12px 16px; border-radius:12px; height:76px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center;">
-          <div class="tag" style="font-size:13px;">Step 2 핵심 (9월 내)</div>
-          <h3 style="font-size:15px; margin:3px 0 0;">팬덤 참여기제(응원) 신설</h3>
+          <div class="tag" style="font-size:13px; white-space:nowrap;">Step 2 핵심 · 디자인/개발 일정 검토 예정</div>
+          <h3 style="font-size:15px; margin:3px 0 0; white-space:nowrap;">팬덤 참여기제(응원) 신설</h3>
         </div>
         <div class="step-card" style="padding:12px 16px; border-radius:12px; height:76px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center;">
-          <div class="tag" style="font-size:13px;">Step 2 · 핵심</div>
-          <h3 style="font-size:15px; margin:3px 0 0;">팬덤 확산기제 공유하기 고도화</h3>
+          <div class="tag" style="font-size:13px; white-space:nowrap;">Step 2 핵심 · 디자인/개발 일정 검토 예정</div>
+          <h3 style="font-size:15px; margin:3px 0 0; white-space:nowrap;">팬덤 확산기제 공유하기 고도화</h3>
         </div>
       </div>
 
@@ -297,7 +298,7 @@
         <div class="step-card" style="padding:24px; border-radius:16px; box-sizing:border-box;">
           <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
             <span class="badge core" style="margin-bottom:0;">Step 2 · 핵심</span>
-            <span class="muted" style="font-size:14px;">26년 9월 중 적용</span>
+            <span class="muted" style="font-size:14px;">디자인/개발 일정 검토 예정</span>
           </div>
           <h3 style="margin-bottom:10px;">팬덤 참여기제 (응원하기)</h3>
           <p style="font-size:16px; color:#c4ccc4; line-height:1.6;">비로그인 무제한 응원으로 진입장벽 낮추고, 베리즈 인증 응원 베네핏으로 코어팬 재방문 유도.</p>
@@ -312,6 +313,7 @@
         <div class="step-card" style="padding:24px; border-radius:16px; box-sizing:border-box;">
           <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
             <span class="badge core" style="margin-bottom:0;">Step 2 · 핵심</span>
+            <span class="muted" style="font-size:14px;">디자인/개발 일정 검토 예정</span>
           </div>
           <h3 style="margin-bottom:10px;">팬덤 확산기제 (공유하기 고도화)</h3>
           <p style="font-size:16px; color:#c4ccc4; line-height:1.6;">팬덤의 자발적 공유를 통해 바이럴 확산 도모. 공유하기 타입·디자인 개선, 공유 요소 개발.</p>
@@ -367,7 +369,7 @@
       <div style="flex:1; min-width:0;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
           <span class="badge core" style="margin-bottom:0;">STEP 2 · 핵심</span>
-          <span class="muted" style="font-size:14px;">26년 9월 중 적용 목표</span>
+          <span class="muted" style="font-size:14px;">디자인/개발 일정 검토 예정</span>
         </div>
         <div class="eyebrow" style="margin-bottom:12px;">4-2. 팬덤 참여기제 (응원하기)</div>
         <ul style="font-size:17px; line-height:1.65; padding-left:20px; color:#c4ccc4; margin-bottom:24px;">
